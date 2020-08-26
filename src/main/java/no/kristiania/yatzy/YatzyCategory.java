@@ -1,5 +1,5 @@
 package no.kristiania.yatzy;
 
 public enum YatzyCategory {
-    TWOS, ONES
+    TWOS, PAIR, ONES, THREE_OF_A_KIND;
 }
