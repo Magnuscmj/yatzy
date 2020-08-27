@@ -18,6 +18,9 @@ public class YatzyGame {
             }else if (die == 4 && category == YatzyCategory.FOUR) {
                 result+= die;
 
+            }else if (die == 5 && category == YatzyCategory.FIVE) {
+                result+= die;
+
             }else if (die == 6 && category == YatzyCategory.SIX) {
                 result+= die;
             }
@@ -31,6 +34,27 @@ public class YatzyGame {
             for (int value = frequencies.length - 1; value >= 0; value--)
                 if (frequencies[value] == 2) {
                     return value * 2;
+                }
+        }
+
+        if (category == YatzyCategory.TWO_PAIR) {
+            for (int value = frequencies.length - 1; value >= 0; value--)
+                if (frequencies[value] == 2) {
+                    result += value * 2;
+                }
+        }
+
+        if (category == YatzyCategory.THREE_OF_A_KIND) {
+            for (int value = frequencies.length - 1; value >= 0; value--)
+                if (frequencies[value] == 3) {
+                    return value * 3;
+                }
+        }
+
+        if (category == YatzyCategory.FOUR_OF_A_KIND) {
+            for (int value = frequencies.length - 1; value >= 0; value--)
+                if (frequencies[value] == 4) {
+                    return value * 4;
                 }
         }
 
