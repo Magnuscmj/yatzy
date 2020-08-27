@@ -8,8 +8,12 @@ public class YatzyGame {
         for (int die : dice) {
             if (die == 1 && category == YatzyCategory.ONES) {
                 result += die;
+
             } else if (die == 2 && category == YatzyCategory.TWOS) {
                 result += die;
+
+            } else if (die == 3 && category == YatzyCategory.THREE) {
+                result+= die;
             }
         }
 
@@ -23,13 +27,7 @@ public class YatzyGame {
                     return value * 2;
                 }
         }
-        if (category == YatzyCategory.THREE_OF_A_KIND) {
-            for (int value = frequencies.length - 1; value >= 0; value--)
-                if (frequencies[value] == 3) {
-                    return value * 3;
-                }
 
-        }
         return result;
     }
 }
