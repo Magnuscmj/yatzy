@@ -14,6 +14,12 @@ public class YatzyGame {
 
             } else if (die == 3 && category == YatzyCategory.THREE) {
                 result+= die;
+
+            }else if (die == 4 && category == YatzyCategory.FOUR) {
+                result+= die;
+
+            }else if (die == 6 && category == YatzyCategory.SIX) {
+                result+= die;
             }
         }
 
